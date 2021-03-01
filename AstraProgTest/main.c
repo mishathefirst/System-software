@@ -1,8 +1,8 @@
-#include <stdio.h>
+#include "hello.h"
 
 
 int main() {
-	printf("First Astra Program \n");
+	hello_message("Astra");
 	return 0;
 }
 
