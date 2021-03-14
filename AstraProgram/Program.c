@@ -4,7 +4,7 @@
 
 int main(int argc, char** argv) {
     struct dirent *ep;
-    DIR *dir = opendir("./dev");
+    DIR *dir = opendir("./");
     if (dir != NULL) {
         while (ep = readdir(dir))
             puts(ep -> d_name);
@@ -13,6 +13,5 @@ int main(int argc, char** argv) {
         puts("Couldn't open the directory.");
     }
 
-    closedir(dir);
     return 0;
 }
