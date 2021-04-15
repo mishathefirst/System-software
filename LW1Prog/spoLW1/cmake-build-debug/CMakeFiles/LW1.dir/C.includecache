@@ -104,10 +104,6 @@ string.h
 stdlib.h
 -
 
-/home/misha/Документы/LW1Prog/spoLW1/sources/commands.c
-../headers/commands.h
-/home/misha/Документы/LW1Prog/spoLW1/headers/commands.h
-
 /home/misha/Документы/LW1Prog/spoLW1/sources/filesystem_utils.c
 ../headers/filesystem_utils.h
 /home/misha/Документы/LW1Prog/spoLW1/headers/filesystem_utils.h
@@ -119,10 +115,6 @@ stdlib.h
 /home/misha/Документы/LW1Prog/spoLW1/headers/mode.h
 ../headers/partition.h
 /home/misha/Документы/LW1Prog/spoLW1/headers/partition.h
-
-/home/misha/Документы/LW1Prog/spoLW1/sources/mode.c
-../headers/mode.h
-/home/misha/Документы/LW1Prog/spoLW1/headers/mode.h
 
 /home/misha/Документы/LW1Prog/spoLW1/sources/operations_ext.c
 ../headers/operations_ext.h
@@ -139,8 +131,4 @@ stdlib.h
 /home/misha/Документы/LW1Prog/spoLW1/headers/operations_ext.h
 limits.h
 /home/misha/Документы/LW1Prog/spoLW1/sources/limits.h
-
-/home/misha/Документы/LW1Prog/spoLW1/sources/utils.c
-../headers/utils.h
-/home/misha/Документы/LW1Prog/spoLW1/headers/utils.h
 

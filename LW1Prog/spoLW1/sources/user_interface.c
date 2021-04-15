@@ -24,17 +24,17 @@ void execute_operation(struct commands command, struct state* fs_state){
 int entrance(char* path){
     struct state* fs_state = setup(path);
     if (fs_state != NULL){
-        printf("Введите команду\n");
+        printf("Enter a command:\n");
         char input[LINE_MAX];
         fgets_wrapper(input, LINE_MAX, stdin);
         struct commands command = parse_command(input);
         while (command.type != QUIT){
             execute_operation(command, fs_state);
-            printf("Введите команду\n");
+            printf("Enter a command:\n");
             fgets_wrapper(input, LINE_MAX, stdin);
             command = parse_command(input);
         }
-        printf("Завершение работы.\n");
+        printf("Stopping the app.\n");
         return 0;
     }
     return 1;

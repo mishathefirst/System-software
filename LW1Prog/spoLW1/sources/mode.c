@@ -19,7 +19,7 @@ struct program get_args(const int argc, char** argv) {
                 args.path ++;
                 break;
             default:
-                printf("Неизвестный режим работы.\n");
+                printf("Wrong or unknown mode.\n");
                 break;
         }
     }

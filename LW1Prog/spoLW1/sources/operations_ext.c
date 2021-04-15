@@ -85,7 +85,7 @@ void execute_cd(struct state* fs_state, char* target) {
             entry = (void *) entry + entry->rec_len;
             size += entry->rec_len;
         }
-        if (flag == 0) printf("Не удалось найти директорию %s\n", target);
+        if (flag == 0) printf("Couldn't find directory %s\n", target);
         free(ptr);
     }
 }
@@ -206,9 +206,9 @@ void execute_ext_pwd(struct state* fs_state){
 }
 
 void execute_help(){
-    printf("ls - показывает содержимое директории.\n");
-    printf("cp filename path - скопировать указанный файл.\n");
-    printf("pwd  - вывести путь файла\n");
-    printf("cd filename - перейти в указанную директорию\n");
-    printf("quit - завершить работу\n");
+    printf("ls - shows the content of the directory;\n");
+    printf("cp <filename> <destination path> - copy the file according to the path;\n");
+    printf("pwd  - write path to current file/directory;\n");
+    printf("cd <directory path> - change directory;\n");
+    printf("quit - leave the interaction mode and stop the app.\n");
 }

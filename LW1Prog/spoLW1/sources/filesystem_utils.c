@@ -157,6 +157,6 @@ struct state* setup(char* device_path) {
         groupDesc = read_group_descriptions(fs_state);
 
         fs_state->groupDesc = groupDesc;
-    }else printf("Неизвестная файловая система.\n");
+    }else printf("Unknown File System.\n");
     return fs_state;
 }

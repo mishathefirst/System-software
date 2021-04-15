@@ -99,13 +99,13 @@ void get_partitions() {
                         sys_sub_entry = readdir(sys_sub_dir);
                     }
                 } else {
-                   printf("Не удалось прочесть.\n");
+                   printf("Couldn't read.\n");
                 }
                 free(path);
             }
             sys_entry = readdir(sys_dir);
         }
     } else {
-        printf("Не удалось прочесть.\n");
+        printf("Couldn't read.\n");
     }
 }
