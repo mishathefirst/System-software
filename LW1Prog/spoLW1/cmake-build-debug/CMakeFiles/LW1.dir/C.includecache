@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/misha/Документы/LW1Prog/spoLW1/headers/commands.h
-string.h
-/home/misha/Документы/LW1Prog/spoLW1/headers/string.h
-limits.h
-/home/misha/Документы/LW1Prog/spoLW1/headers/limits.h
-
 /home/misha/Документы/LW1Prog/spoLW1/headers/constants.h
 
 /home/misha/Документы/LW1Prog/spoLW1/headers/filesystem_utils.h
@@ -32,14 +26,6 @@ stdio.h
 ../headers/state.h
 /home/misha/Документы/LW1Prog/spoLW1/headers/state.h
 
-/home/misha/Документы/LW1Prog/spoLW1/headers/mode.h
-getopt.h
-/home/misha/Документы/LW1Prog/spoLW1/headers/getopt.h
-string.h
-/home/misha/Документы/LW1Prog/spoLW1/headers/string.h
-stdio.h
-/home/misha/Документы/LW1Prog/spoLW1/headers/stdio.h
-
 /home/misha/Документы/LW1Prog/spoLW1/headers/operations_ext.h
 ftw.h
 -
@@ -54,32 +40,6 @@ structures.h
 filesystem_utils.h
 /home/misha/Документы/LW1Prog/spoLW1/headers/filesystem_utils.h
 
-/home/misha/Документы/LW1Prog/spoLW1/headers/partition.h
-dirent.h
-/home/misha/Документы/LW1Prog/spoLW1/headers/dirent.h
-stddef.h
--
-stdio.h
-/home/misha/Документы/LW1Prog/spoLW1/headers/stdio.h
-string.h
-/home/misha/Документы/LW1Prog/spoLW1/headers/string.h
-limits.h
-/home/misha/Документы/LW1Prog/spoLW1/headers/limits.h
-malloc.h
--
-fcntl.h
--
-linux/fs.h
--
-unistd.h
--
-sys/ioctl.h
--
-utils.h
-/home/misha/Документы/LW1Prog/spoLW1/headers/utils.h
-constants.h
-/home/misha/Документы/LW1Prog/spoLW1/headers/constants.h
-
 /home/misha/Документы/LW1Prog/spoLW1/headers/state.h
 limits.h
 /home/misha/Документы/LW1Prog/spoLW1/headers/limits.h
@@ -92,43 +52,13 @@ linux/types.h
 stdint.h
 -
 
-/home/misha/Документы/LW1Prog/spoLW1/headers/user_interface.h
-stdio.h
--
-commands.h
-/home/misha/Документы/LW1Prog/spoLW1/headers/commands.h
-
 /home/misha/Документы/LW1Prog/spoLW1/headers/utils.h
 string.h
 -
 stdlib.h
 -
 
-/home/misha/Документы/LW1Prog/spoLW1/sources/filesystem_utils.c
-../headers/filesystem_utils.h
-/home/misha/Документы/LW1Prog/spoLW1/headers/filesystem_utils.h
-
-/home/misha/Документы/LW1Prog/spoLW1/sources/main.c
-../headers/user_interface.h
-/home/misha/Документы/LW1Prog/spoLW1/headers/user_interface.h
-../headers/mode.h
-/home/misha/Документы/LW1Prog/spoLW1/headers/mode.h
-../headers/partition.h
-/home/misha/Документы/LW1Prog/spoLW1/headers/partition.h
-
 /home/misha/Документы/LW1Prog/spoLW1/sources/operations_ext.c
 ../headers/operations_ext.h
 /home/misha/Документы/LW1Prog/spoLW1/headers/operations_ext.h
-
-/home/misha/Документы/LW1Prog/spoLW1/sources/partition.c
-../headers/partition.h
-/home/misha/Документы/LW1Prog/spoLW1/headers/partition.h
-
-/home/misha/Документы/LW1Prog/spoLW1/sources/user_interface.c
-../headers/user_interface.h
-/home/misha/Документы/LW1Prog/spoLW1/headers/user_interface.h
-../headers/operations_ext.h
-/home/misha/Документы/LW1Prog/spoLW1/headers/operations_ext.h
-limits.h
-/home/misha/Документы/LW1Prog/spoLW1/sources/limits.h
 

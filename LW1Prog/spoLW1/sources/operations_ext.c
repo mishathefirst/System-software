@@ -15,6 +15,7 @@ char* get_path(char* target){
 void execute_ext_ls(struct state* fs_state){
     struct ext_inode inode;
     struct ext_dir *entry;
+    struct ext_dir *entry1;
     void* ptr;
     unsigned int num_inode = fs_state->current_inode;
 
@@ -28,7 +29,12 @@ void execute_ext_ls(struct state* fs_state){
         char file_name[FILENAME_MAX];
         memcpy(file_name, entry->name, entry->name_len);
         file_name[entry->name_len] = 0;
-        printf("%10u %s\n", entry->inode, file_name);
+
+        num_inode = fs_state->current_inode;
+        read_inode(fs_state, entry->inode, &inode);
+        //entry1 = read_block(fs_state, &inode);
+
+        printf("%10u %s %10u\n", entry->inode, file_name, inode.i_size);
         entry = (void *) entry + entry->rec_len;
         size += entry->rec_len;
     }
