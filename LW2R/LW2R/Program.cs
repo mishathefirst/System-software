@@ -13,14 +13,12 @@ namespace LW2R
         [DllImport("libextlabutils.so")]
         static extern void get_partitions();
         [DllImport("libextlabutils.so")]
-        static extern void entrance(char[] path, char[] command);
+        static extern void entrance(char[] path);
+        //[DllImport("libextlabutilsextra.so")]
+        //static extern char[] entrance(char[] path, char[] command);
 
         static void Main(string[] args)
         {
-            //foreach(string arg in args) {
-                //Console.WriteLine(arg);
-            //}
-            //print("Hello World C# => C++");
             if (args[0].Equals("1"))
             {
                 get_partitions();
@@ -29,19 +27,22 @@ namespace LW2R
                 Console.WriteLine("Enter a command:");
                 string command = "new";
                 string path = args[1];
+                string output = "";
+                command = Console.ReadLine();
                 
-                while (!command.Equals("quit"))
-                {
-                    command = Console.ReadLine();
-                    entrance(path.ToCharArray(), command.ToCharArray());
+                //while (!command.Equals("quit"))
+                //{
+                    //command = Console.ReadLine();
+                    //output = entrance(path.ToCharArray(), command.ToCharArray()).ToString();
+                    //Console.WriteLine(output);
                     //switch (command)
                     //{
                       //  case "ls": execute_ext_ls();
                     //}
-                }
+                //}
 
                 //Console.WriteLine(command);
-                //entrance(args[1].ToCharArray()); 
+                entrance(args[1].ToCharArray()); 
             }
             else
             {
